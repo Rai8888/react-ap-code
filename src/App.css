@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body,
+h2,
+p {
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+  max-width: 100%;
+  display: block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button {
+  font: inherit;
 }
 
-.App-link {
-  color: #61dafb;
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--color-bg);
+  font-family: var(--font-family);
+  color: #FFFFFF;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p:hover,
+p:focus-visible {
+  opacity: .5;
 }
+
+button:hover,
+button:focus-visible {
+  opacity: .8;
+}
+
+.gradient-bg {
+  background:radial-gradient(circle at 3% 25%, rgba(34, 136, 85, 0.2) 0%, rgba(4, 12, 24, 1) 100%);
+}
+
+.gradient-text {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.section-padding {
+  padding: 4rem 6rem;
+}
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+ :root {
+   --font-family: 'Manrope', sans-serif;
+   --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+   --color-bg: #040C18;
+   --color-blog: #042c54;
+ }

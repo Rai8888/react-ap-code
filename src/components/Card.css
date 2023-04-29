@@ -1,0 +1,58 @@
+.card {
+  background-color: var(--color-blog);
+  min-height: 330px;
+  color: #ffffff;
+  border-top-left-radius: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-inline: 2rem;
+  padding-block: 13px;
+  height: 100%;
+}
+
+.card-content_date {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 35px;
+}
+
+.card-content_title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 12px;
+}
+
+
+.large {
+  grid-row: span 2;
+}
+
+.large .card-content {
+  padding-block: 2rem 13px;
+}
+.large .card-content_title {
+  font-size: 25px;
+  padding-bottom: 13rem;
+}
+
+.card button {
+  background-color: transparent;
+  color: #FFFFFF;
+  border: transparent;
+  size: 12px;    
+  font-family: inherit;
+  line-height: 35px;
+  padding-left: 25px;
+  padding-top: 20px;
+}
+
+.card button:hover {
+  cursor: pointer;
+}
