@@ -3,6 +3,15 @@
 *::after {
   box-sizing: border-box;
 }
+ 
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+  --font-family: 'Manrope', sans-serif;
+  --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+  --color-bg: #040C18;
+  --color-blog: #042c54;
+}
 
 body,
 h2,
@@ -39,10 +48,7 @@ button:focus-visible {
   opacity: .8;
 }
 
-.gradient-bg {
-  background:radial-gradient(circle at 3% 25%, rgba(34, 136, 85, 0.2) 0%, rgba(4, 12, 24, 1) 100%);
-}
-
+ 
 .gradient-text {
   background: var(--gradient-text);
   background-clip: text;
@@ -54,11 +60,4 @@ button:focus-visible {
   padding: 4rem 6rem;
 }
  
- @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
- :root {
-   --font-family: 'Manrope', sans-serif;
-   --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
-   --color-bg: #040C18;
-   --color-blog: #042c54;
- }
